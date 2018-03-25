@@ -19,7 +19,7 @@ public class MaxArray {
             array[i] = sc.nextInt();
         }
         //display list
-        System.out.print("Property list:");
+        System.out.print("Property list:" + "\n");
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
         }
@@ -29,9 +29,9 @@ public class MaxArray {
         for (int j = 0; j < array.length; j++) {
             if (array[j] > max) {
                 max = array[j];
-                index = j + 1;
+                index = j+1 ;
             }
         }
-        System.out.println("The largest property value in the list is " + max + " ,at position " + index);
+        System.out.println("\n" + "The largest property value in the list is " + max + " ,at position " + index);
     }
 }
